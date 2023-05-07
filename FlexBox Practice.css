@@ -1,0 +1,111 @@
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    flex: 1;
+    background-color: #f1f1f1;
+    margin: 2px;
+    font-size: 30px;
+  }
+  .flex-container > div[id~=extend] {
+    flex: 9;
+    padding: 20px;
+    height: min-content;
+    background-color: #f1f1f1;
+    margin: 2px;
+    
+    font-size: 30px;
+
+  }
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+.flex-container > div {
+    flex: 1;
+    background-color: #f1f1f1;
+    margin: 2px;
+    font-size: 30px;
+}
+
+a[class~="specialLink"]{
+    color:aliceblue;
+    text-decoration: none;
+    padding-right: 12px;
+    padding-bottom: 2px;
+    background-color: dimgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+}
+
+a[class~="specialLink"]:hover{
+    background-color:gray;
+}
+
+
+@media (max-width: 1200px) {
+    div[class~="Bam"] {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+header {
+    position: sticky;
+    top:0;
+
+    background: lightblue;
+    text-align: left;
+  }
+
+  .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: #2980B9;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    width: calc(14.285vw - 8px);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+div[id~="sidebar"]{
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: dimgray;
+}
