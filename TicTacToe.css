@@ -1,0 +1,50 @@
+.flex-container {
+    display: flex;
+    
+    justify-content: center;
+  }
+  
+  .flex-container > div {
+      
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    background-color: #f1f1f1;
+    
+    
+  }
+
+button[class~='TicTacButton']{
+    height:10vw;
+    width:10vw;
+
+    min-width: 110px;
+    min-height: 120px;
+    margin: calc(100vw / 729);
+    font-size: 50px;
+}
+
+/*In courtesy of W3 schools */
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  font-size: 100px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}

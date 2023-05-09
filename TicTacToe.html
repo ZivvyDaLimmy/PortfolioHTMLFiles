@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html style="font-family: Verdana, Geneva, Tahoma, sans-serif; overflow-x: hidden; margin: 0; top:0">
+    <head>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <meta charset="UTF-8">
+    </head>
+    <script src = "TicTacToe.js"></script>
+    <link rel="stylesheet" href="TicTacToe.css">
+    <div id="overlay" onclick="off()">
+        <div id="text">Overlay Text</div>
+    </div>
+
+    <div style="background-color: dodgerblue;">
+        <p style="text-align: center; margin-top: 0px; top:0; font-size: 40px;"><b>WELCOME TO TIC TAC TOE</b></p>
+        <div class="flex-container">
+            <div><button id = "b1" class = "TicTacButton" onclick="change(1)"></button></div>
+            <div><button id = "b2" class = "TicTacButton" onclick="change(2)"></button></div>
+            <div><button id = "b3" class = "TicTacButton" onclick="change(3)"></button></div>
+        </div>
+        <div class="flex-container">
+            <div><button id = "b4" class = "TicTacButton" onclick="change(4)"></button></div>
+            <div><button id = "b5" class = "TicTacButton" onclick="change(5)"></button></div>
+            <div><button id = "b6" class = "TicTacButton" onclick="change(6)"></button></div>
+        </div>
+        <div class="flex-container">
+            <div><button id = "b7" class = "TicTacButton" onclick="change(7)"></button></div>
+            <div><button id = "b8" class = "TicTacButton" onclick="change(8)"></button></div>
+            <div><button id = "b9" class = "TicTacButton" onclick="change(9)"></button></div>
+        </div>
+    </div>
+    
+    <div style="height: auto; background-color: dimgray;">
+        <table style="width: 100vw;">
+            <tr>
+                <td><p style="margin: 0px; text-align: left; font-size:20px">Player 1: X</p></td>
+                <td><button style="float: right; margin-right: 18px;; font-size:20px; width: 20vw; min-width: 100px;" id = "Bb1" onclick="switchButton(false)">Play with Bot: Human First</button></td>
+            </tr>
+            <tr>
+                <td><p style="margin: 0px; text-align: left; font-size:20px" id = "changeText">Player 2: O</p></td>
+                <td><button style="float: right; margin-right: 18px; font-size:20px; width: 20vw; min-width: 100px; " id = "Bb2" onclick="switchButton(true)">Play with Bot: Bot first</button></td>
+            </tr>
+        </table>
+    </div>
+
+</html>
